@@ -24,7 +24,7 @@
 
     .guanggao {
         background: #F7F7F7;
-        height: 66px;
+        height: 72px;
         text-align: center;
     }
 
@@ -38,13 +38,25 @@
         background: #CC2E1E;
         margin: 10px auto;
     }
+
+    .footer {
+        background: #B3B3B3;
+        height: 70px;
+        color: #fff;
+        line-height: 70px;
+        font-size: 14px;
+    }
+
+    .footer-div {
+        float: left;
+    }
 </style>
 
 <body style="margin: 0;">
     <div id="header" class="header">
         <span style="font-size: 12px;padding:0 10px;"> 返回 </span>
         <span> | </span>
-        <img src="ico/favicon.ico" alt="" style="float: right;height: 23px;padding: 8px;">
+        <img src="ico/favicon.ico" alt="" style="float: right;height: 23px;padding: 8px;padding-right: 12px;">
     </div>
     <div class="guanggao">
         <div style="padding-top: 15px;color: #E11F62;font-weight: bold;"> 权益卡 </div>
@@ -57,8 +69,11 @@
         <div> 加油枪号 <input type="text" placeholder="油机上的油枪编号或请员工告知"> </div>
         <div class="payBtn" onclick="change()">开始加油 (付款)</div>
     </div>
-    <div id="footer">
-        钱包：540
+    <div id="footer" class="footer">
+        <div class="footer-div" style="width: 30%;">钱包：540</div>
+        <div class="footer-div" style="width: 20%;">钱包充值</div>
+        <div class="footer-div" style="width: 30%;color: yellow;">扫码购</div>
+        <div class="footer-div">账单</div>
     </div>
 </body>
 <script>
