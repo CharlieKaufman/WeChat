@@ -20,28 +20,51 @@
         background: #C7161C;
         color: #fff;
         line-height: 40px;
-        padding-left: 5px;
+    }
+
+    .guanggao {
+        background: #F7F7F7;
+        height: 66px;
+        text-align: center;
+    }
+
+    .payBtn {
+        width: 150px;
+        height: 50px;
+        border-radius: 7px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 15px;
+        background: #CC2E1E;
+        margin: 10px auto;
     }
 </style>
 
 <body style="margin: 0;">
     <div id="header" class="header">
-        <div>
-            返回|
-
-        </div>
+        <span style="font-size: 12px;padding:0 10px;"> 返回 </span>
+        <span> | </span>
+        <img src="ico/favicon.ico" alt="" style="float: right;height: 23px;padding: 8px;">
     </div>
-    <div id="content">
-        <div>
-            权益卡
-        </div>
-        <div>
-            桐乡-城西站
-        </div>
+    <div class="guanggao">
+        <div style="padding-top: 15px;color: #E11F62;font-weight: bold;"> 权益卡 </div>
+        <div style="color: #ea5186;font-size: 15px;font-weight: 600;"> 年省不止2000 限时特惠￥298/年，查看详情 >></div>
+    </div>
+    <div id="content" style=" text-align: center;">
+        <div> </div>
+        <div> 桐乡-城西站</div>
+        <div> 加油油品 <input type="text" value="92号汽油"> </div>
+        <div> 加油枪号 <input type="text" placeholder="油机上的油枪编号或请员工告知"> </div>
+        <div class="payBtn" onclick="change()">开始加油 (付款)</div>
     </div>
     <div id="footer">
         钱包：540
     </div>
 </body>
+<script>
+    function change() {
+        window.open("http://www.baidu.com");
+    }
+</script>
 
 </html>
